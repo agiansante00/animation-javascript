@@ -1,0 +1,17 @@
+
+<img id="output1"></img>
+
+<script>
+var output1 = document.getElementById('output1');
+var varCounter = 0;
+var myVar = setInterval(myTimer, 100);
+
+
+function myTimer() {
+		if (varCounter < 14){
+		varCounter++;
+		var n = varCounter.toString();
+		document.getElementById("output1").src = "000"+ n + ".svg"
+		}
+}		
+</script>
